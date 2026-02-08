@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Its Your Turn | Technology Company</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link href="'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">
+  <a href="#about">
+    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Its Your Turn">
+  </a>
+  </div>
+  <ul>
+  <li><a href="#overview">Overview</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#expertise">Expertise</a></li>
+  <li><a href="#services">Services</a></li>
+  <li><a href="#team">Team</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+{% block content %}{% endblock %}
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

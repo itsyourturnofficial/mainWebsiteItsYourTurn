@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap');
+
+/* ================== GLOBAL ================== */
+/* ================== GLOBAL ================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0b0f1a;
+  color: #e5e7eb;
+  font-family: 'Inter', sans-serif;   /* BODY FONT */
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background: #0b0f1a;
+  color: #e5e7eb;
+  scroll-behavior: smooth;
+}
+h2 {
+  letter-spacing: -0.5px;
+}
+
+p {
+  letter-spacing: 0.2px;
+}
+
+
+/* ================== NAVBAR ================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.65);
+  backdrop-filter: blur(14px);
+  z-index: 1000;
+}
+
+.logo img {
+  height: 42px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #22d3ee;
+}
+
+/* ================== HERO ================== */
+.hero {
+  height: 100vh;
+  background: radial-gradient(circle at top, #6366f1, #020617);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10%;
+}
+
+.hero h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+
+.hero span {
+  color: #22d3ee;
+}
+
+.hero p {
+  margin: 18px 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.cta {
+  margin-top: 25px;
+  padding: 14px 36px;
+  background: linear-gradient(90deg, #6366f1, #22d3ee);
+  color: black;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ================== SECTIONS ================== */
+.section {
+  padding: 110px 10%;
+}
+
+.section.dark {
+  background: #020617;
+}
+
+.section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+/* ================== DESIGNER BOX ================== */
+.designer-box {
+  max-width: 900px;
+  margin: auto;
+  padding: 50px 45px;
+  text-align: center;
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(16px);
+  border-radius: 28px;
+}
+
+.designer-box p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  opacity: 0.95;
+}
+
+/* ================== GRID ================== */
+.grid {
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+}
+
+/* ================== CORE EXPERTISE ================== */
+.expertise-card {
+  position: relative;
+  min-height: 200px;
+  border-radius: 24px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(14px);
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.expertise-card h3 {
+  font-size: 1.25rem;
+  padding: 0 20px;
+  transition: opacity 0.3s ease;
+}
+
+.expertise-card:hover h3 {
+  opacity: 0;
+}
+
+.expertise-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  color: #000;
+  padding: 30px;
+  font-weight: 600;
+  border-radius: 24px;
+  opacity: 0;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.expertise-card:hover .expertise-overlay {
+  opacity: 1;
+}
+
+/* ================== SERVICES ================== */
+.service-hover-card {
+  position: relative;
+  min-height: 280px;
+  border-radius: 26px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(14px);
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.service-hover-card h3 {
+  font-size: 1.3rem;
+  padding: 0 25px;
+  transition: opacity 0.3s ease;
+}
+
+.service-hover-card:hover h3 {
+  opacity: 0;
+}
+
+.service-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #22d3ee, #6366f1);
+  color: #000;
+  padding: 35px;
+  border-radius: 26px;
+  opacity: 0;
+  transition: 0.3s;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.service-overlay ul {
+  text-align: left;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.service-overlay li {
+  margin-bottom: 12px;
+}
+
+.service-hover-card:hover .service-overlay {
+  opacity: 1;
+}
+
+/* ================== TEAM ================== */
+.ceo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0 80px;
+}
+
+.ceo-card {
+  width: 300px;
+  padding: 35px 25px 40px;
+  border-radius: 28px;
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(14px);
+  text-align: center;
+}
+
+.ceo-image {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(135deg, #22d3ee, #6366f1);
+}
+
+.ceo-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.ceo-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+}
+
+.ceo-card p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.coo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 820px;
+  margin: auto;
+
+  align-items: flex-start;   /* ⭐ THIS IS THE KEY FIX */
+}
+
+
+.coo-card {
+  flex: 1;
+  padding: 35px;
+  border-radius: 24px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(14px);
+  text-align: center;
+}
+
+.coo-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+}
+
+.coo-card p {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+/* ================== CONTACT ================== */
+.contact-box p {
+  margin: 10px 0;
+}
+
+.contact-links {
+  margin-top: 20px;
+}
+
+.contact-links a {
+  margin: 0 15px;
+  color: #22d3ee;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+/* ================== FOOTER ================== */
+footer {
+  padding: 30px;
+  text-align: center;
+  background: black;
+  font-size: 0.9rem;
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+
+  .section {
+    padding: 90px 7%;
+  }
+
+  .coo-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .designer-box {
+    padding: 35px 25px;
+  }
+}
+/* ================== VISION & MISSION ================== */
+
+.vm-wrapper {
+  max-width: 1000px;
+  margin: 60px auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 35px;
+}
+
+.vm-card {
+  padding: 40px 35px;
+  border-radius: 26px;
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(16px);
+  text-align: center;
+}
+
+.vm-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 18px;
+}
+
+.vm-card p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+.vm-card ul {
+  text-align: left;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.vm-card li {
+  margin-bottom: 12px;
+}
+/* ================== TEAM HOVER INFO ================== */
+
+/* ================== TEAM INFO (NO OVERLAP DESIGN) ================== */
+
+/* ================== TEAM INFO (INDEPENDENT EXPAND) ================== */
+
+.team-hover {
+  overflow: hidden;
+}
+
+/* Hidden by default */
+.team-info {
+  max-height: 0;
+  opacity: 0;
+  margin-top: 0;
+  padding: 0 20px;
+
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(12px);
+  color: #e5e7eb;
+
+  border-radius: 16px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: center;
+
+  transition: max-height 0.35s ease, opacity 0.25s ease, margin-top 0.25s ease, padding 0.25s ease;
+}
+
+/* Expand ONLY the hovered card */
+.team-hover:hover .team-info {
+  max-height: 140px;
+  opacity: 1;
+  margin-top: 16px;
+  padding: 16px 20px;
+}
+/* ================== CONTACT LOGO ================== */
+
+.contact-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.contact-logo img {
+  width: 90px;        /* clean & not too big */
+  height: auto;
+  opacity: 0.9;
+}
