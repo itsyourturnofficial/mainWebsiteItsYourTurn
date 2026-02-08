@@ -1,239 +1,180 @@
-{% extends "base.html" %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- HERO -->
-<section class="hero">
-  <h1>Turning Ideas into <span>Technologies</span></h1>
-  <p>Advanced Project Solutions & Industry-Ready Training</p>
-  <a href="#services" class="cta">Explore Services</a>
-</section>
-<!-- COMPANY OVERVIEW -->
-<section class="section dark" id="overview">
-  <div class="designer-box">
-    <h2>Company Overview</h2>
-    <p>
-      <strong>Its Your Turn</strong> is a future-focused technology company dedicated
-      to delivering advanced project solutions and hands-on training for students and
-      professionals in <strong>Internet of Things (IoT)</strong>, 
-      <strong>Embedded Systems</strong>, 
-      <strong>Electronics Design & Development</strong>, and 
-      <strong>Software Technology</strong>.
-    </p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Its Your Turn — Turning Ideas into Technologies</title>
+  <meta name="description"
+    content="Its Your Turn — project solutions and hands-on training in IoT, Embedded Systems, Electronics Design and Software Technology.">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
 
-    <p>
-      We specialize in transforming innovative ideas into functional, market-ready
-      products that power the connected world. By combining strong engineering
-      expertise with real-world problem solving, <strong>Its Your Turn</strong>
-      bridges the gap between academic learning and industry requirements.
-    </p>
-  </div>
-</section>
-
-
-<!-- ABOUT -->
-<section class="section" id="about">
-  <div class="designer-box">
-    <h2>Who We Are</h2>
-    <p>
-      Its Your Turn is a future-focused technology company delivering advanced project
-      solutions and hands-on training in IoT, Embedded Systems, Electronics Design, and
-      Software Technology.
-    </p>
-  </div>
-
-  <!-- Vision & Mission -->
-  <div class="vm-wrapper">
-
-    <!-- Vision -->
-    <div class="vm-card">
-      <h3>Vision</h3>
-      <p>
-        To empower the next generation of innovators by turning ideas into impactful
-        technologies that shape a smarter, more connected future.
-      </p>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="logo">
+      <a href="#about"><img src="static/images/logo.png" alt="Its Your Turn logo"></a>
     </div>
 
-    <!-- Mission -->
-    <div class="vm-card">
-      <h3>Mission</h3>
-      <ul>
-        <li>To provide industry-oriented, hands-on training aligned with real-world applications.</li>
-        <li>To design and deliver innovative, scalable, and reliable technology solutions.</li>
-        <li>To nurture creativity, technical excellence, and entrepreneurial thinking among students and professionals.</li>
-      </ul>
-    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
 
-  </div>
-</section>
+    <ul class="nav-links">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Turning Ideas into <span>Technologies</span></h1>
+      <p>Advanced Project Solutions &amp; Industry-Ready Training</p>
+      <a class="cta" href="#services">Explore Services</a>
+    </section>
 
-
-<!-- EXPERTISE -->
-<!-- EXPERTISE -->
-<section class="section dark" id="expertise">
-  <h2>Core Expertise</h2>
-
-  <div class="grid expertise-grid">
-
-    <div class="expertise-card">
-      <h3>Internet of Things (IoT)</h3>
-      <div class="expertise-overlay">
-        Smart devices, sensors, connectivity, cloud integration
+    <!-- COMPANY OVERVIEW -->
+    <section class="section dark" id="overview">
+      <div class="designer-box">
+        <h2>Company Overview</h2>
+        <p><strong>Its Your Turn</strong> delivers advanced project solutions and hands-on training in Internet of
+          Things (IoT), Embedded Systems, Electronics Design &amp; Development, and Software Technology.</p>
+        <p>We transform ideas into market-ready products by combining engineering expertise with real-world problem
+          solving.</p>
       </div>
-    </div>
+    </section>
 
-    <div class="expertise-card">
-      <h3>Embedded Systems</h3>
-      <div class="expertise-overlay">
-        Microcontrollers, firmware development, real-time systems
+    <!-- ABOUT / WHO WE ARE -->
+    <section class="section" id="about">
+      <div class="designer-box">
+        <h2>Who We Are</h2>
+        <p>We provide industry-oriented, hands-on training and project development support for students and
+          professionals.</p>
       </div>
-    </div>
 
-    <div class="expertise-card">
-      <h3>Electronics Design & Development</h3>
-      <div class="expertise-overlay">
-        PCB design, prototyping, testing
+      <div class="vm-wrapper">
+        <div class="card vm-card">
+          <h3>Vision</h3>
+          <p>To empower the next generation of innovators by turning ideas into impactful technologies.</p>
+        </div>
+        <div class="card vm-card">
+          <h3>Mission</h3>
+          <ul>
+            <li>Industry-oriented, hands-on training aligned with real-world applications.</li>
+            <li>Design and deliver innovative, scalable technology solutions.</li>
+            <li>Nurture creativity, technical excellence, and entrepreneurial thinking.</li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="expertise-card">
-      <h3>Software Technology</h3>
-      <div class="expertise-overlay">
-        Application development, system integration, automation
+    <!-- CORE EXPERTISE -->
+    <section class="section dark" id="expertise">
+      <h2>Core Expertise</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Internet of Things (IoT)</h3>
+          <p>Smart devices, sensors, connectivity, cloud integration.</p>
+        </div>
+        <div class="card">
+          <h3>Embedded Systems</h3>
+          <p>Microcontrollers, firmware development, real-time systems.</p>
+        </div>
+        <div class="card">
+          <h3>Electronics Design &amp; Development</h3>
+          <p>PCB design, prototyping, testing.</p>
+        </div>
+        <div class="card">
+          <h3>Software Technology</h3>
+          <p>Application development, system integration, automation.</p>
+        </div>
       </div>
-    </div>
+    </section>
 
-  </div>
-</section>
-<!-- SERVICES OFFERED -->
-<section class="section" id="services">
-  <h2>Services Offered</h2>
-
-  <div class="grid services-grid">
-
-    <div class="service-hover-card">
-      <h3>Project Development Solutions</h3>
-      <div class="service-overlay">
-        <ul>
-          <li>Academic and industrial project development</li>
-          <li>Proof-of-concept (PoC) and prototype design</li>
-          <li>Product development and deployment support</li>
-        </ul>
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <h2>Services Offered</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Project Development Solutions</h3>
+          <ul style="text-align:left;margin-top:8px;line-height:1.6">
+            <li>Academic and industrial project development</li>
+            <li>Proof-of-concept and prototype design</li>
+            <li>Product development &amp; deployment support</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Hands-On Training Programs</h3>
+          <ul style="text-align:left;margin-top:8px;line-height:1.6">
+            <li>IoT &amp; Embedded Systems training</li>
+            <li>Electronics design workshops</li>
+            <li>Software development and integration</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Innovation &amp; Mentorship</h3>
+          <ul style="text-align:left;margin-top:8px;line-height:1.6">
+            <li>Idea validation and technical mentoring</li>
+            <li>Startup and product guidance</li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="service-hover-card">
-      <h3>Hands-On Training Programs</h3>
-      <div class="service-overlay">
-        <ul>
-          <li>IoT & Embedded Systems training</li>
-          <li>Electronics design workshops</li>
-          <li>Software development and integration</li>
-          <li>Internship-oriented & skill-based learning modules</li>
-        </ul>
+    <!-- TEAM -->
+    <section class="section dark" id="team">
+      <h2>Leadership Team</h2>
+      <div class="ceo-wrapper">
+        <div class="ceo-card">
+          <div class="ceo-image">
+            <img src="static/images/ceo.jpg" alt="CEO">
+          </div>
+          <h3>Yuvasankar Rajan P V</h3>
+          <p>Chief Executive Officer</p>
+        </div>
       </div>
-    </div>
 
-    <div class="service-hover-card">
-      <h3>Innovation & Mentorship</h3>
-      <div class="service-overlay">
-        <ul>
-          <li>Idea validation and technical mentoring</li>
-          <li>Startup and product guidance</li>
-          <li>Research-oriented project support</li>
-        </ul>
+      <div class="grid" style="max-width:820px;margin:0 auto">
+        <div class="card">
+          <h3>Shyam Ganesh E</h3>
+          <p>COO – Software</p>
+        </div>
+        <div class="card">
+          <h3>Manimaran V</h3>
+          <p>COO – Hardware</p>
+        </div>
       </div>
-    </div>
+    </section>
 
-  </div>
-</section>
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="designer-box contact-box">
+        <div class="contact-logo"><img src="static/images/logo.png" alt="Its Your Turn logo" style="width:84px"></div>
+        <h2>Contact Us</h2>
+        <p>📧 itsyourturnofficial@gmail.com</p>
+        <p>📞 +91 7530035770</p>
+        <p>📍 Vellore, Tamil Nadu, India</p>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener">X (Twitter)</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <footer>© 2026 Its Your Turn — Turning Ideas into Innovation</footer>
 
+  <script src="static/js/main.js"></script>
+</body>
 
-<!-- TEAM -->
-<section class="section dark" id="team">
-  <h2>Leadership Team</h2>
-
-  <!-- CEO CENTER -->
-<div class="ceo-wrapper">
-  <div class="ceo-card team-hover">
-
-    <div class="ceo-image">
-      <img src="{{ url_for('static', filename='images/ceo.jpg') }}" alt="CEO">
-    </div>
-
-    <h3>Yuvasankar Rajan P V</h3>
-    <p>Chief Executive Officer</p>
-
-    <!-- Hover Info -->
-    <div class="team-info">
-      Provides strategic vision, innovation leadership, and overall direction for the company.
-    </div>
-
-  </div>
-</div>
-
-
-
-  <!-- COOs BELOW -->
-  <div class="coo-wrapper">
-
-  <!-- LEFT -->
-  <div class="coo-card team-hover">
-    <h3>Shyam Ganesh E</h3>
-    <p>COO – Software</p>
-
-    <div class="team-info">
-      Oversees software architecture, application development, and system integration.
-    </div>
-  </div>
-
-  <!-- RIGHT -->
-  <div class="coo-card team-hover">
-    <h3>Manimaran V</h3>
-    <p>COO – Hardware</p>
-
-    <div class="team-info">
-      Leads hardware design, embedded systems development, and electronics innovation.
-    </div>
-  </div>
-
-</div>
-
-
-
-
-<!-- CONTACT -->
-<section class="section dark" id="contact">
-  <div class="designer-box contact-box">
-
-    <!-- COMPANY LOGO -->
-    <div class="contact-logo">
-      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Its Your Turn Logo">
-    </div>
-
-    <h2>Contact Us</h2>
-
-    <p>📧 itsyourturnofficial@gmail.com</p>
-    <p>📞 +91 7530035770</p>
-    <p>📍 Vellore, Tamil Nadu, India</p>
-
-    <div class="contact-links">
-      <a href="https://www.linkedin.com/in/itsyourturn-undefined-2418a9393" target="_blank">
-        LinkedIn
-      </a>
-      <a href="https://twitter.com/YUVA44974991" target="_blank">
-        X (Twitter)
-      </a>
-    </div>
-
-  </div>
-</section>
-
-
-
-<footer>
-  © 2026 Its Your Turn — Turning Ideas into Innovation
-</footer>
-
-{% endblock %}
+</html>
