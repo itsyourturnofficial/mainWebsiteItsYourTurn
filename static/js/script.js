@@ -350,3 +350,14 @@ function initSystemLogs() {
         }
     }, 3000);
 }
+
+// Scroll Progress Bar
+window.addEventListener('scroll', () => {
+    const progressBar = document.getElementById('scroll-progress');
+    if (progressBar) {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrollPercent = (scrollTop / scrollHeight) * 100;
+        progressBar.style.width = scrollPercent + '%';
+    }
+});
