@@ -4,9 +4,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Its Your Turn — Future Tech</title>
+  <title>Its Your Turn — IoT & Embedded Systems Training | Future Tech</title>
   <meta name="description"
-    content="Advanced project solutions in IoT, Embedded Systems, and Software Technology. Industry-ready training and development.">
+    content="Master IoT, Embedded Systems, and Edge AI with industry-ready projects. Join 'Its Your Turn' for hands-on training in ESP32, STM32, AWS IoT, and PCB Design.">
+  <meta name="keywords"
+    content="IoT training, Embedded Systems course, Industrial IoT, ESP32, STM32, PCB Design, Edge AI, AWS IoT Core, Robotics workshop, Engineering projects">
+  <meta name="author" content="Its Your Turn">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#2563EB">
+  <link rel="canonical" href="https://www.itsyourturn.co.in">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.itsyourturn.co.in/">
+  <meta property="og:title" content="Its Your Turn — Build Real-World IoT Systems">
+  <meta property="og:description"
+    content="Bridge the gap between theory and reality. Hands-on training in Embedded Systems, Industrial IoT, and Hardware Design.">
+  <meta property="og:site_name" content="Its Your Turn">
+  <meta property="og:image" content="https://www.itsyourturn.co.in/static/images/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.itsyourturn.co.in/">
+  <meta property="twitter:title" content="Its Your Turn — Future Tech Training">
+  <meta property="twitter:description"
+    content="Master IoT and Embedded Systems with real-world projects. Start building today.">
+  <meta property="twitter:image" content="https://www.itsyourturn.co.in/static/images/og-image.jpg">
+
+  <link rel="icon" href="static/images/logo.png" type="image/png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,6 +84,38 @@
     }
   </script>
   <link rel="stylesheet" href="static/css/style.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Its Your Turn",
+      "url": "https://www.itsyourturn.co.in",
+      "logo": "https://www.itsyourturn.co.in/static/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91 7530035770",
+        "contactType": "customer service",
+        "email": "itsyourturnofficial@gmail.com"
+      },
+      "sameAs": [
+        "https://linkedin.com/company/itsyourturn",
+        "https://twitter.com/itsyourturn"
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Its Your Turn",
+      "url": "https://www.itsyourturn.co.in",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.itsyourturn.co.in/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
 </head>
 
 <body
@@ -78,7 +135,7 @@
           <div
             class="absolute inset-0 bg-brand-accent/20 blur-md rounded-full group-hover:bg-brand-accent/40 transition-all">
           </div>
-          <img class="relative h-6 w-auto" src="static/images/logo.png" alt="Logo">
+          <img class="relative h-6 w-auto" src="static/images/logo.png" alt="Its Your Turn Logo" width="24" height="24">
         </div>
         <span
           class="font-display font-bold text-slate-900 tracking-widest text-sm uppercase group-hover:text-brand-accent transition-colors">Its
@@ -103,7 +160,8 @@
           class="hidden sm:inline-flex items-center justify-center px-6 py-2 border border-brand-accent text-xs font-bold text-white bg-brand-accent hover:bg-brand-accent/90 hover:shadow-royal shadow-royal-hover transition-all uppercase tracking-widest rounded-full">
           Contact
         </a>
-        <button id="mobile-menu-toggle" class="md:hidden text-slate-600 hover:text-brand-accent transition-colors">
+        <button id="mobile-menu-toggle" class="md:hidden text-slate-600 hover:text-brand-accent transition-colors"
+          aria-label="Open mobile menu">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
           </svg>
@@ -115,7 +173,8 @@
   <!-- Mobile Menu Overlay -->
   <div id="mobile-menu" class="mobile-menu fixed inset-0 z-[60] bg-brand-base flex flex-col pt-32 px-8 space-y-6">
     <div class="absolute inset-0 bg-circuit opacity-20 pointer-events-none"></div>
-    <button id="mobile-menu-close" class="absolute top-8 right-8 p-3 text-slate-400 hover:text-brand-accent">
+    <button id="mobile-menu-close" class="absolute top-8 right-8 p-3 text-slate-400 hover:text-brand-accent"
+      aria-label="Close mobile menu">
       <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
       </svg>
@@ -488,7 +547,7 @@
                   <span class="w-1 h-1 bg-brand-accent mr-2"></span> Real-Time Operating Systems
                 </li>
               </ul>
-              <a href="#"
+              <a href="#contact"
                 class="inline-flex items-center text-xs font-bold text-slate-900 uppercase tracking-wider group-hover:text-brand-accent transition-colors">
                 Initialize Track <span class="ml-2">→</span>
               </a>
@@ -531,7 +590,7 @@
                   <span class="w-1 h-1 bg-brand-cyan mr-2"></span> Grafana Dashboards
                 </li>
               </ul>
-              <a href="#"
+              <a href="#contact"
                 class="inline-flex items-center text-xs font-bold text-slate-900 uppercase tracking-wider group-hover:text-brand-cyan transition-colors">
                 Initialize Track <span class="ml-2">→</span>
               </a>
@@ -572,7 +631,7 @@
                   <span class="w-1 h-1 bg-purple-400 mr-2"></span> 3D Component Modeling
                 </li>
               </ul>
-              <a href="#"
+              <a href="#contact"
                 class="inline-flex items-center text-xs font-bold text-slate-900 uppercase tracking-wider group-hover:text-purple-400 transition-colors">
                 Initialize Track <span class="ml-2">→</span>
               </a>
@@ -685,7 +744,7 @@
           <!-- App 1 -->
           <div class="group relative h-64 rounded-xl overflow-hidden cursor-pointer">
             <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800"
-              alt="Smart Factory"
+              alt="Smart automated factory floor with robotic arms" loading="lazy"
               class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-40">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-base via-brand-base/50 to-transparent"></div>
             <div class="absolute bottom-0 left-0 p-8">
@@ -700,7 +759,7 @@
           <!-- App 2 -->
           <div class="group relative h-64 rounded-xl overflow-hidden cursor-pointer">
             <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800"
-              alt="Smart Agriculture"
+              alt="Smart agriculture field with IoT sensors" loading="lazy"
               class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-40">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-base via-brand-base/50 to-transparent"></div>
             <div class="absolute bottom-0 left-0 p-8">
@@ -740,7 +799,7 @@
               <div class="flex items-center gap-6 mb-6 relative z-10">
                 <div
                   class="w-20 h-20 rounded-full overflow-hidden border-2 border-slate-100 group-hover:border-brand-accent transition-colors">
-                  <img src="static/images/ceo.jpg" alt="CEO"
+                  <img src="static/images/ceo.jpg" alt="Yuvasankar Rajan P V, CEO of Its Your Turn" loading="lazy"
                     class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all">
                 </div>
                 <div>
@@ -870,8 +929,11 @@
         <div>
           <h4 class="font-bold text-white mb-4 uppercase text-xs tracking-widest text-brand-accent">Social Link</h4>
           <div class="flex gap-4">
-            <a href="#" class="text-slate-400 hover:text-brand-accent transition-colors">LinkedIn</a>
-            <a href="#" class="text-slate-400 hover:text-brand-accent transition-colors">Twitter</a>
+            <a href="https://linkedin.com/company/itsyourturn"
+              class="text-slate-400 hover:text-brand-accent transition-colors" target="_blank"
+              rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://twitter.com/itsyourturn" class="text-slate-400 hover:text-brand-accent transition-colors"
+              target="_blank" rel="noopener noreferrer">Twitter</a>
             <a href="#" class="text-slate-400 hover:text-brand-accent transition-colors">GitHub</a>
           </div>
         </div>
