@@ -42,9 +42,9 @@ export default function ContactPage() {
                                         <div>
                                             <h4 className="font-bold text-slate-900 text-sm">Headquarters</h4>
                                             <p className="text-slate-600 text-sm mt-1 leading-relaxed">
-                                                123 Innovation Drive,<br />
-                                                Tech Corridor, Sector 4,<br />
-                                                Chennai, Tamil Nadu - 600001
+                                                No.450 ITS YOUR TURN,<br />
+                                                31st street, 17th cross,Sathuvachari,<br />
+                                                Vellore, Tamil Nadu - 600001
                                             </p>
                                         </div>
                                     </div>
