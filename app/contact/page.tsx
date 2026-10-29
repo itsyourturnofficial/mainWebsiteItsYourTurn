@@ -44,7 +44,7 @@ export default function ContactPage() {
                                             <p className="text-slate-600 text-sm mt-1 leading-relaxed">
                                                 No.450 ITS YOUR TURN,<br />
                                                 31st street, 17th cross,Sathuvachari,<br />
-                                                Vellore, Tamil Nadu - 600001
+                                                Vellore, Tamil Nadu - 632009
                                             </p>
                                         </div>
                                     </div>
